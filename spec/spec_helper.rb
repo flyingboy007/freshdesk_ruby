@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "freshdesk_ruby"
+require "support/vcr_setup"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -8,4 +9,8 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  #for mocking external services requests
+  require 'webmock/rspec'
+  WebMock.disable_net_connect!(allow_localhost: true)
 end

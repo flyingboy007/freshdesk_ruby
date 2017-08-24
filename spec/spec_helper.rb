@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "freshdesk_ruby"
+require "freshdesk"
 require "support/vcr_setup"
 
 RSpec.configure do |config|
@@ -13,4 +13,14 @@ RSpec.configure do |config|
   #for mocking external services requests
   require 'webmock/rspec'
   WebMock.disable_net_connect!(allow_localhost: true)
+
+  #For adding auth key
+    #Before begining to run test please set the below environments
+    config.before(:all) do
+        Freshdesk.configure do |config|
+            config.url = ENV['FRESHDESK_URL']
+            config.api_key = ENV['FRESHDESK_API_KEY']
+          end
+      end
+  
 end

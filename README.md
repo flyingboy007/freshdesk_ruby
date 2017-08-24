@@ -1,7 +1,6 @@
 # FreshdeskRuby
 
-A ruby gem for using the Freshdesk REST API V2
-
+A ruby gem for using the Citrus REST API
 
 ## Installation
 
@@ -18,11 +17,24 @@ And then execute:
 Or install it yourself as:
 
     $ gem install freshdesk_ruby
+In an Initialiser add:
+
+```ruby
+Freshdesk.configure do |config|
+production
+  config.url =  "Put your Freshdesk base_url here"
+  config.api_key =  "Put your Freshdesk api_key here"  
+end
+```    
 
 ## Usage
 
-TODO: Write usage instructions here
-
+### Tickets
+TODO: Below features will be added as implemented
+  **Create a Ticket**
+  **View a Ticket**
+  
+         
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -37,4 +49,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/flying
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

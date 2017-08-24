@@ -1,7 +1,11 @@
 require "freshdesk/version"
 require "freshdesk/configuration"
 require "errors/configuration"
+require "freshdesk/ticket"
 
+require 'net/http'
+require 'uri'
+require 'json'
 module Freshdesk
     #class << self bit tells our Freshdesk module that this instance variable is on the module scope
     class << self

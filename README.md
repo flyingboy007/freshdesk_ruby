@@ -30,8 +30,21 @@ end
 ## Usage
 
 ### Tickets
+**Create a Ticket**
+ 
+
+    ticket_params= {
+            "description": "Details about the issue...",
+            "subject": "Support Needed...",
+            "email": "test@test.com",
+            "priority": 1,
+            "status": 2
+        }
+    response=Freshdesk::Ticket.create_a_ticket(ticket_params)
+
 TODO: Below features will be added as implemented
-  **Create a Ticket**
+  
+  
   **View a Ticket**
   
          

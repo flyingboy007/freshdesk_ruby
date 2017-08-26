@@ -1,6 +1,6 @@
 # FreshdeskRuby [![Build Status](https://travis-ci.org/flyingboy007/freshdesk_ruby.svg?branch=master)](https://travis-ci.org/flyingboy007/freshdesk_ruby)
 
-A ruby gem for using the Citrus REST API
+A ruby gem for using the Freshdesk REST API(No dependencies!!!!)
 
 ## Installation
 

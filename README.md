@@ -42,11 +42,14 @@ end
         }
     response=Freshdesk::Ticket.create_a_ticket(ticket_params)
 
-TODO: Below features will be added as implemented
-  
-  
-  **View a Ticket**
-  
+**View Tickets**
+
+       #in query put the search criteria(no need to url encode)
+       query= "email=test@test.com"
+       response=Freshdesk::Ticket.view_all(query)
+     
+
+As of now getting tickets based on some criteria and creating new tickets are the features I needed in my app.  I will try to put some more features in the future. If you are interested in contributing please submit a pull request(please provide tests aswell). Have a great day..
          
 ## Development
 

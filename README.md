@@ -47,7 +47,35 @@ end
        #in query put the search criteria(no need to url encode)
        query= "email=test@test.com"
        response=Freshdesk::Ticket.view_all(query)
-     
+
+### Solutions
+
+> The only intention of adding this api in this gem is to create a
+> custom knowledgebase.  
+
+3 types of solutions: Categories, Folders, Articles
+ 
+ **1) Categories**
+ 
+ a) **List all Solution Folders in a Category**
+
+    category_id= put the category id 
+    response=Freshdesk::Solutions.list_all_folders(category_id)
+    #sample response
+    [
+      {
+        "id": 4,
+        "name": "sample folder",
+        "description": "This is created for demo purpose",
+        "visibility": 4,
+        "created_at": "2016-09-08T12:04:49Z",
+        "updated_at": "2016-09-08T13:17:47Z",
+        "company_ids": [1]
+      }
+    ]
+
+
+
 
 As of now getting tickets based on some criteria and creating new tickets are the features I needed in my app.  I will try to put some more features in the future. If you are interested in contributing please submit a pull request(please provide tests aswell). Have a great day..
          
@@ -65,3 +93,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/flying
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+

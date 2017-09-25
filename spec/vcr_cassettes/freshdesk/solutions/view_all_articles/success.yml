@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://roomduck.freshdesk.com/api/v2/solutions/folders/52525252/articles
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - roomduck.freshdesk.com
+      Authorization:
+      - Basic Vk1vT1RVZXl2ell4d0hNSEhvNkg6WA==
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 25 Sep 2017 19:02:09 GMT
+      Expires:
+      - Wed, 13 Oct 2010 00:00:00 UTC
+      Pragma:
+      - no-cache
+      Set-Cookie:
+      - _x_w=23_3; path=/; secure
+      Status:
+      - 200 OK
+      X-Freshdesk-Api-Version:
+      - latest=v2; requested=v2
+      X-Rack-Cache:
+      - miss
+      X-Ratelimit-Remaining:
+      - '989'
+      X-Ratelimit-Total:
+      - '1000'
+      X-Ratelimit-Used-Currentrequest:
+      - '1'
+      X-Request-Id:
+      - 670882a5f6e76d754aaf7998e6563c49
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '947'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjI3MDAwMDQxNTc5LCJ0eXBlIjoxLCJjYXRlZ29yeV9pZCI6MjcwMDAwMzQ3MTMsImZvbGRlcl9pZCI6MjcwMDAwNTM5NzQsInRodW1ic191cCI6MCwidGh1bWJzX2Rvd24iOjAsImhpdHMiOjAsInNlb19kYXRhIjp7Im1ldGFfdGl0bGUiOiIiLCJtZXRhX2Rlc2NyaXB0aW9uIjoiIiwibWV0YV9rZXl3b3JkcyI6IiJ9LCJhZ2VudF9pZCI6MjcwMDAxMDc1NTgsInRpdGxlIjoiSG93IGRvZXMgUm9vbUR1Y2sgd29yaz8iLCJkZXNjcmlwdGlvbiI6IjxwPkJlaW5nIHBhcnQgb2YgUm9vbUR1Y2suY29tIGlzIGVhc3kuIEZpcnN0IHlvdSBsaXN0IHRoZSBwcm9wZXJ0eSB3aXRoIHRoZSByb29tcyB0aGF0IHlvdSB3YW50IHRvIHNlbGwgb24gUm9vbWR1Y2suY29tIG1hcmtldHBsYWNlLiBHdWVzdCBzZWVzIHlvdXIgcm9vbSBhbmQgbWFrZXMgYSBib29raW5nLiBZb3Ugd2lsbCByZWNlaXZlIGEgbm90aWZpY2F0aW9uIGFib3V0IHRoZSBib29raW5nLiBSb29tRHVjayB3aWxsIGRlcG9zaXQgdGhlIGZ1bmRzIGludG8geW91ciBiYW5rIGFjY291bnQgYWZ0ZXIgZGVkdWN0aW5nIG91ciA8YSBocmVmPVwiXCI+ZmVlczwvYT4uPC9wPjxwPjxicj48L3A+PHA+PGJyPjwvcD48cD48YnI+PC9wPjxwPjxicj48L3A+IiwiZGVzY3JpcHRpb25fdGV4dCI6IiBCZWluZyBwYXJ0IG9mIFJvb21EdWNrLmNvbSBpcyBlYXN5LiBGaXJzdCB5b3UgbGlzdCB0aGUgcHJvcGVydHkgd2l0aCB0aGUgcm9vbXMgdGhhdCB5b3Ugd2FudCB0byBzZWxsIG9uIFJvb21kdWNrLmNvbSBtYXJrZXRwbGFjZS4gR3Vlc3Qgc2VlcyB5b3VyIHJvb20gYW5kIG1ha2VzIGEgYm9va2luZy4gWW91IHdpbGwgcmVjZWl2ZSBhIG5vdGlmaWNhdGlvbiBhYm91dCB0aGUgYm9va2luZy4gUm9vbUR1Y2sgd2lsbCBkZXBvc2l0IHRoZSBmdW5kcyBpbnRvIHlvdXIgYmFuayBhY2NvdW50IGFmdGVyIGRlZHVjdGluZyBvdXIgZmVlcy4gICAgICAgICAgICAgIiwic3RhdHVzIjoyLCJjcmVhdGVkX2F0IjoiMjAxNy0wOS0yMFQxNDowNzoyMloiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOS0yMFQxNDowODozNVoifSx7ImlkIjoyNzAwMDA0MTY3OCwidHlwZSI6MSwiY2F0ZWdvcnlfaWQiOjI3MDAwMDM0NzEzLCJmb2xkZXJfaWQiOjI3MDAwMDUzOTc0LCJ0aHVtYnNfdXAiOjAsInRodW1ic19kb3duIjowLCJoaXRzIjowLCJzZW9fZGF0YSI6eyJtZXRhX3RpdGxlIjoiIiwibWV0YV9kZXNjcmlwdGlvbiI6IiIsIm1ldGFfa2V5d29yZHMiOiIifSwiYWdlbnRfaWQiOjI3MDAwMTA3NTU4LCJ0aXRsZSI6IldoYXQgZG8gSSBuZWVkIHRvIHJlZ2lzdGVyIGFzIGEgc2VsbGVyIG9uIFJvb21EdWNrLmNvbT8iLCJkZXNjcmlwdGlvbiI6IjxwPlBsZWFzZSA8YSBocmVmPVwiXCI+Y2xpY2sgaGVyZTwvYT4gdG8gcmVnaXN0ZXIgdG8gam9pbiBSb29tRHVjayBmYW1pbHkuIFlvdSB3aWxsIG5lZWQgdGhlIGZvbGxvd2luZyBpbmZvcm1hdGlvbiB0byByZWdpc3RlcjwvcD48dWw+XG48bGk+wqBZb3VyIHByb3BlcnR5IGRldGFpbHM8L2xpPlxuPGxpPsKgWW91ciBjb250YWN0IGRldGFpbHM8L2xpPlxuPGxpPsKgSW5mbyBhYm91dCB5b3VyIHJvb21zIGFuZCBwcm9wZXJ0aWVzPC9saT5cbjxsaT7CoEdTVElOIE51bWJlciBpcyBtYW5kYXRvcnkgYW5kIG5lZWQgdG8gYmUgcHJvdmlkZWQgYmVmb3JlIGdvaW5nIGxpdmU8L2xpPlxuPC91bD48cD48YnI+PC9wPiIsImRlc2NyaXB0aW9uX3RleHQiOiIgUGxlYXNlIGNsaWNrIGhlcmUgdG8gcmVnaXN0ZXIgdG8gam9pbiBSb29tRHVjayBmYW1pbHkuIFlvdSB3aWxsIG5lZWQgdGhlIGZvbGxvd2luZyBpbmZvcm1hdGlvbiB0byByZWdpc3RlciAgXG4gwqBZb3VyIHByb3BlcnR5IGRldGFpbHMgXG4gwqBZb3VyIGNvbnRhY3QgZGV0YWlscyBcbiDCoEluZm8gYWJvdXQgeW91ciByb29tcyBhbmQgcHJvcGVydGllcyBcbiDCoEdTVElOIE51bWJlciBpcyBtYW5kYXRvcnkgYW5kIG5lZWQgdG8gYmUgcHJvdmlkZWQgYmVmb3JlIGdvaW5nIGxpdmUgXG4gICAgIiwic3RhdHVzIjoyLCJjcmVhdGVkX2F0IjoiMjAxNy0wOS0yMlQxNToxMTozNVoiLCJ1cGRhdGVkX2F0IjoiMjAxNy0wOS0yMlQxNToxMzowOVoifSx7ImlkIjoyNzAwMDA0MTY4MiwidHlwZSI6MSwiY2F0ZWdvcnlfaWQiOjI3MDAwMDM0NzEzLCJmb2xkZXJfaWQiOjI3MDAwMDUzOTc0LCJ0aHVtYnNfdXAiOjAsInRodW1ic19kb3duIjowLCJoaXRzIjowLCJzZW9fZGF0YSI6eyJtZXRhX3RpdGxlIjoiIiwibWV0YV9kZXNjcmlwdGlvbiI6IiIsIm1ldGFfa2V5d29yZHMiOiIifSwiYWdlbnRfaWQiOjI3MDAwMTA3NTU4LCJ0aXRsZSI6IkkgaGF2ZSBhbHJlYWR5IHJlZ2lzdGVyZWQgdW5kZXIgYW5vdGhlciByb29tIGJvb2tpbmcgcGxhdGZvcm0sIGNhbiBJIHN0aWxsIGpvaW4gUm9vbWR1Y2s/IiwiZGVzY3JpcHRpb24iOiJZZXMgeW91IGNhbi4gUm9vbWR1Y2sgd29ya3MgaW5kZXBlbmRlbnRseSBhbmQgd29udCBhZmZlY3QgeW91ciBleGlzdGluZyBwbGF0Zm9ybS4gVGhlIG9ubHkgdGhpbmcgeW91IG5lZWQgdG8gZG8gaXMgYWRkIHVuYXZhaWxhYmxlIGRhdGVzIHdoZW4geW91IGdldCBib29raW5ncyBmcm9tIGFub3RoZXIgcGxhdGZvcm1zLCBzbyB0aGF0IHdlIGNhbiBwcmV2ZW50IHRoZSByb29tIGZyb20gZ2V0dGluZyBib29rZWQgb24gdGhvc2UgZGF0ZXMuIFRvIGFkZCB1bmF2YWlsYWJsZSBkYXRlcyA8YSBocmVmPVwiXCI+Y2xpY2sgaGVyZTwvYT4iLCJkZXNjcmlwdGlvbl90ZXh0IjoiWWVzIHlvdSBjYW4uIFJvb21kdWNrIHdvcmtzIGluZGVwZW5kZW50bHkgYW5kIHdvbnQgYWZmZWN0IHlvdXIgZXhpc3RpbmcgcGxhdGZvcm0uIFRoZSBvbmx5IHRoaW5nIHlvdSBuZWVkIHRvIGRvIGlzIGFkZCB1bmF2YWlsYWJsZSBkYXRlcyB3aGVuIHlvdSBnZXQgYm9va2luZ3MgZnJvbSBhbm90aGVyIHBsYXRmb3Jtcywgc28gdGhhdCB3ZSBjYW4gcHJldmVudCB0aGUgcm9vbSBmcm9tIGdldHRpbmcgYm9va2VkIG9uIHRob3NlIGRhdGVzLiBUbyBhZGQgdW5hdmFpbGFibGUgZGF0ZXMgY2xpY2sgaGVyZSIsInN0YXR1cyI6MiwiY3JlYXRlZF9hdCI6IjIwMTctMDktMjJUMTY6NTM6MzZaIiwidXBkYXRlZF9hdCI6IjIwMTctMDktMjJUMTY6NTM6MzZaIn1d
+    http_version: 
+  recorded_at: Mon, 25 Sep 2017 19:02:09 GMT
+recorded_with: VCR 3.0.3

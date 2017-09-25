@@ -2,6 +2,7 @@ require "freshdesk/version"
 require "freshdesk/configuration"
 require "errors/configuration"
 require "freshdesk/ticket"
+require "freshdesk/solution"
 
 require 'net/http'
 require 'uri'
@@ -28,4 +29,12 @@ module Freshdesk
   def self.configure
     yield(configuration)
   end
+
+  def self.valid_json?(json)
+    JSON.parse(json)
+    return true
+  rescue JSON::ParserError => e
+    return false
+  end
+
 end

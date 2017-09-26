@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://roomduck.freshdesk.com/api/v2/tickets?email=test@test.com
+    uri: https://flyingboytesting.freshdesk.com/api/v2/tickets?email=test@test.com
     body:
       encoding: US-ASCII
       string: ''
@@ -14,9 +14,9 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - roomduck.freshdesk.com
+      - flyingboytesting.freshdesk.com
       Authorization:
-      - Basic Vk1vT1RVZXl2ell4d0hNSEhvNkg6WA==
+      - Basic MVNsUEgzZWtUQUhpb3QyZDFNajpY
       Content-Type:
       - application/json
   response:
@@ -29,11 +29,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 26 Aug 2017 07:18:28 GMT
+      - Tue, 26 Sep 2017 04:47:35 GMT
       Expires:
       - Wed, 13 Oct 2010 00:00:00 UTC
       Pragma:
       - no-cache
+      Set-Cookie:
+      - _x_w=25_2; path=/; secure
       Status:
       - 200 OK
       X-Freshdesk-Api-Version:
@@ -41,26 +43,28 @@ http_interactions:
       X-Rack-Cache:
       - miss
       X-Ratelimit-Remaining:
-      - '975'
+      - '4958'
       X-Ratelimit-Total:
-      - '1000'
+      - '5000'
       X-Ratelimit-Used-Currentrequest:
       - '1'
       X-Request-Id:
-      - 2fcf7be1f05c6a3e1ca266ecf052617a
+      - 52a1fd5a930fd9c7e297a8e75ee8bab9
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '369'
+      - '383'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '[{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":27001375907,"responder_id":null,"source":2,"company_id":null,"status":2,"subject":"TEST::Support
-        Needed...","to_emails":null,"product_id":null,"id":13,"type":null,"due_by":"2017-08-27T20:34:09Z","fr_due_by":"2017-08-25T20:34:09Z","is_escalated":false,"description":"<div>Details
-        about the issue...</div>","description_text":"Details about the issue...","custom_fields":{},"created_at":"2017-08-24T20:34:09Z","updated_at":"2017-08-24T20:34:09Z"},{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":27001375907,"responder_id":null,"source":2,"company_id":null,"status":2,"subject":"TEST::Support
-        Needed...","to_emails":null,"product_id":null,"id":12,"type":null,"due_by":"2017-08-27T20:33:01Z","fr_due_by":"2017-08-25T20:33:01Z","is_escalated":false,"description":"<div>Details
-        about the issue...</div>","description_text":"Details about the issue...","custom_fields":{},"created_at":"2017-08-24T20:33:01Z","updated_at":"2017-08-24T20:33:01Z"}]'
+      string: '[{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":35000446801,"responder_id":null,"source":2,"company_id":null,"status":2,"subject":"TEST::Support
+        Needed...","to_emails":null,"product_id":null,"id":4,"type":null,"due_by":"2017-09-28T21:00:00Z","fr_due_by":"2017-09-26T21:00:00Z","is_escalated":false,"description":"<div>Details
+        about the issue...</div>","description_text":"Details about the issue...","custom_fields":{},"created_at":"2017-09-26T04:47:31Z","updated_at":"2017-09-26T04:47:31Z"},{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":35000446801,"responder_id":null,"source":2,"company_id":null,"status":2,"subject":"TEST::Support
+        Needed...","to_emails":null,"product_id":null,"id":3,"type":null,"due_by":"2017-09-28T21:00:00Z","fr_due_by":"2017-09-26T21:00:00Z","is_escalated":false,"description":"<div>Details
+        about the issue...</div>","description_text":"Details about the issue...","custom_fields":{},"created_at":"2017-09-26T04:45:59Z","updated_at":"2017-09-26T04:45:59Z"},{"cc_emails":[],"fwd_emails":[],"reply_cc_emails":[],"fr_escalated":false,"spam":false,"email_config_id":null,"group_id":null,"priority":1,"requester_id":35000446801,"responder_id":null,"source":2,"company_id":null,"status":2,"subject":"TEST::Support
+        Needed...","to_emails":null,"product_id":null,"id":2,"type":null,"due_by":"2017-09-28T21:00:00Z","fr_due_by":"2017-09-26T21:00:00Z","is_escalated":false,"description":"<div>Details
+        about the issue...</div>","description_text":"Details about the issue...","custom_fields":{},"created_at":"2017-09-26T04:42:35Z","updated_at":"2017-09-26T04:42:35Z"}]'
     http_version: 
-  recorded_at: Sat, 26 Aug 2017 07:18:29 GMT
+  recorded_at: Tue, 26 Sep 2017 04:47:35 GMT
 recorded_with: VCR 3.0.3

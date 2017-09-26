@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://roomduck.freshdesk.com/api/v2/tickets
+    uri: https://flyingboytesting.freshdesk.com/api/v2/tickets
     body:
       encoding: UTF-8
       string: '{"description":"Details about the issue...","subject":"TEST::Support
@@ -15,11 +15,11 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - roomduck.freshdesk.com
+      - flyingboytesting.freshdesk.com
       Cache-Control:
       - no-cache
       Authorization:
-      - Basic Vk1vT1RVZXl2ell4d0hNSEhvNkg6WA==
+      - Basic MVNsUEgzZWtUQUhpb3QyZDFNajpY
       Content-Type:
       - application/json
   response:
@@ -32,11 +32,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Thu, 24 Aug 2017 20:44:51 GMT
+      - Tue, 26 Sep 2017 04:47:33 GMT
       Expires:
       - Wed, 13 Oct 2010 00:00:00 UTC
       Pragma:
       - no-cache
+      Set-Cookie:
+      - _x_w=25_2; path=/; secure
       Status:
       - 400 Bad Request
       X-Freshdesk-Api-Version:
@@ -44,13 +46,13 @@ http_interactions:
       X-Rack-Cache:
       - invalidate, pass
       X-Ratelimit-Remaining:
-      - '984'
+      - '4959'
       X-Ratelimit-Total:
-      - '1000'
+      - '5000'
       X-Ratelimit-Used-Currentrequest:
       - '1'
       X-Request-Id:
-      - b97781993f0882477dd3cdb9d4949aa7
+      - 9b2845ab8702f828c8d6c55608a964c3
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -62,5 +64,5 @@ http_interactions:
       string: '{"description":"Validation failed","errors":[{"field":"requester_id","message":"Please
         fill at least 1 of requester_id, phone, email, twitter_id, facebook_id fields","code":"missing_field"}]}'
     http_version: 
-  recorded_at: Thu, 24 Aug 2017 20:44:52 GMT
+  recorded_at: Tue, 26 Sep 2017 04:47:33 GMT
 recorded_with: VCR 3.0.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://flyingboytesting.freshdesk.com/api/v2/solutions/folders/35000028485/articles
+    uri: https://flyingboytesting.freshdesk.com/api/v2/solutions/articles/invalid=something
     body:
       encoding: US-ASCII
       string: ''
@@ -19,15 +19,15 @@ http_interactions:
       - Basic MVNsUEgzZWtUQUhpb3QyZDFNajpY
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Cache-Control:
       - must-revalidate, no-cache, no-store, private, max-age=0
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Tue, 26 Sep 2017 04:47:18 GMT
+      - Tue, 26 Sep 2017 04:47:28 GMT
       Expires:
       - Wed, 13 Oct 2010 00:00:00 UTC
       Pragma:
@@ -35,30 +35,26 @@ http_interactions:
       Set-Cookie:
       - _x_w=25_2; path=/; secure
       Status:
-      - 200 OK
-      X-Freshdesk-Api-Version:
-      - latest=v2; requested=v2
+      - 404 Not Found
       X-Rack-Cache:
       - miss
       X-Ratelimit-Remaining:
-      - '4966'
+      - '4961'
       X-Ratelimit-Total:
       - '5000'
       X-Ratelimit-Used-Currentrequest:
       - '1'
       X-Request-Id:
-      - a84bb82dd086e501f7a8e27b36a84932
+      - 36104e573140a9517cc053b6b6267f1c
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
-      - '270'
+      - '27'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '[{"id":35000002296,"type":1,"category_id":35000018943,"folder_id":35000028485,"thumbs_up":0,"thumbs_down":0,"hits":0,"seo_data":{"meta_title":"","meta_description":"","meta_keywords":""},"agent_id":35000446719,"title":"How
-        to do something?","description":"<p>This is a testing article</p>","description_text":"
-        This is a testing article ","status":2,"created_at":"2017-09-26T04:45:01Z","updated_at":"2017-09-26T04:45:01Z"}]'
+      string: " "
     http_version: 
-  recorded_at: Tue, 26 Sep 2017 04:47:18 GMT
+  recorded_at: Tue, 26 Sep 2017 04:47:29 GMT
 recorded_with: VCR 3.0.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://roomduck.freshdesk.com/api/v2/solutions/categories/invalid=something/folders
+    uri: https://flyingboytesting.freshdesk.com/api/v2/solutions/categories/invalid=something/folders
     body:
       encoding: US-ASCII
       string: ''
@@ -14,9 +14,9 @@ http_interactions:
       User-Agent:
       - Ruby
       Host:
-      - roomduck.freshdesk.com
+      - flyingboytesting.freshdesk.com
       Authorization:
-      - Basic Vk1vT1RVZXl2ell4d0hNSEhvNkg6WA==
+      - Basic MVNsUEgzZWtUQUhpb3QyZDFNajpY
       Content-Type:
       - application/json
   response:
@@ -29,25 +29,25 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 25 Sep 2017 14:15:24 GMT
+      - Tue, 26 Sep 2017 04:47:17 GMT
       Expires:
       - Wed, 13 Oct 2010 00:00:00 UTC
       Pragma:
       - no-cache
       Set-Cookie:
-      - _x_w=23_3; path=/; secure
+      - _x_w=25_2; path=/; secure
       Status:
       - 404 Not Found
       X-Rack-Cache:
       - miss
       X-Ratelimit-Remaining:
-      - '987'
+      - '4967'
       X-Ratelimit-Total:
-      - '1000'
+      - '5000'
       X-Ratelimit-Used-Currentrequest:
       - '1'
       X-Request-Id:
-      - bfb8792294361459b4211a42b25aad46
+      - ee4166e337179ec8f7bf5c638a88c40f
       X-Xss-Protection:
       - 1; mode=block
       Content-Length:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: " "
     http_version: 
-  recorded_at: Mon, 25 Sep 2017 14:15:24 GMT
+  recorded_at: Tue, 26 Sep 2017 04:47:17 GMT
 recorded_with: VCR 3.0.3
